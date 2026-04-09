@@ -6,7 +6,7 @@ const productSchema = new mongoose.Schema({
   price: { type: Number, required: true },
   originalPrice: { type: Number },
   image: { type: String, required: true },
-  category: { type: String, required: true, enum: ['Religious Art', 'Fashion'] },
+  category: { type: String, required: true, enum: ['Hazrat Imam Portraits & Religious Art', 'Traditional Ismaili Wear', 'Community Items'] },
   rating: { type: Number, default: 0, min: 0, max: 5 },
   reviewCount: { type: Number, default: 0 },
   stock: { type: Number, required: true, default: 0 },

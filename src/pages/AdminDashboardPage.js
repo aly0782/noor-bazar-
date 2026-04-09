@@ -3,12 +3,12 @@ import products from '../data/products';
 import sellers from '../data/sellers';
 
 const mockAdminOrders = [
-  { id: 'NOR-A001', customer: 'Ahmed K.', seller: 'TASBI Heritage', total: 149.99, status: 'Delivered', date: '2024-03-10' },
-  { id: 'NOR-A002', customer: 'Priya S.', seller: 'Elegance Textiles', total: 299.99, status: 'Shipped', date: '2024-03-12' },
-  { id: 'NOR-A003', customer: 'Fatima R.', seller: 'TASBI Heritage', total: 89.99, status: 'Processing', date: '2024-03-14' },
-  { id: 'NOR-A004', customer: 'Ananya P.', seller: 'Elegance Textiles', total: 129.99, status: 'Delivered', date: '2024-03-08' },
-  { id: 'NOR-A005', customer: 'Omar S.', seller: 'TASBI Heritage', total: 45.99, status: 'Shipped', date: '2024-03-15' },
-  { id: 'NOR-A006', customer: 'Lakshmi D.', seller: 'Elegance Textiles', total: 79.99, status: 'Processing', date: '2024-03-16' },
+  { id: 'NOR-A001', customer: 'Ahmed K.', seller: 'Hazrat Imam Heritage Crafts', total: 149.99, status: 'Delivered', date: '2024-03-10' },
+  { id: 'NOR-A002', customer: 'Karim A.', seller: 'Ismaili Artisan Textiles', total: 299.99, status: 'Shipped', date: '2024-03-12' },
+  { id: 'NOR-A003', customer: 'Fatima R.', seller: 'Hazrat Imam Heritage Crafts', total: 89.99, status: 'Processing', date: '2024-03-14' },
+  { id: 'NOR-A004', customer: 'Nadia I.', seller: 'Ismaili Artisan Textiles', total: 129.99, status: 'Delivered', date: '2024-03-08' },
+  { id: 'NOR-A005', customer: 'Omar S.', seller: 'Hazrat Imam Heritage Crafts', total: 45.99, status: 'Shipped', date: '2024-03-15' },
+  { id: 'NOR-A006', customer: 'Aliya M.', seller: 'Ismaili Artisan Textiles', total: 39.99, status: 'Processing', date: '2024-03-16' },
 ];
 
 function AdminDashboardPage({ navigate }) {

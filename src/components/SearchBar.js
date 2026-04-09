@@ -26,8 +26,9 @@ function SearchBar({ searchTerm, onSearchChange, categoryFilter, onCategoryChang
           className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-noor-gold"
         >
           <option value="all">All Categories</option>
-          <option value="Religious Art">Religious Art</option>
-          <option value="Fashion">Fashion</option>
+          <option value="Hazrat Imam Portraits & Religious Art">Hazrat Imam Portraits & Religious Art</option>
+          <option value="Traditional Ismaili Wear">Traditional Ismaili Wear</option>
+          <option value="Community Items">Community Items</option>
         </select>
 
         {/* Price Range */}

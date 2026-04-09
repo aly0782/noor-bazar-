@@ -284,8 +284,8 @@ function App() {
           <div>
             <h3 className="text-2xl font-display font-bold text-noor-gold mb-4">Noor</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Your premier marketplace for sacred art and traditional textiles.
-              Connecting artisans with admirers worldwide.
+              Your premier Ismaili marketplace for sacred Hazrat Imam art and
+              traditional wear. Serving the global Ismaili community with devotion.
             </p>
           </div>
           <div>
@@ -300,10 +300,10 @@ function App() {
           <div>
             <h4 className="font-semibold mb-3">Categories</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Religious Art</li>
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Fashion</li>
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Home Decor</li>
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Handloom</li>
+              <li className="hover:text-noor-gold transition-colors cursor-pointer">Hazrat Imam Portraits</li>
+              <li className="hover:text-noor-gold transition-colors cursor-pointer">Traditional Ismaili Wear</li>
+              <li className="hover:text-noor-gold transition-colors cursor-pointer">Community Items</li>
+              <li className="hover:text-noor-gold transition-colors cursor-pointer">Ismaili Calligraphy</li>
             </ul>
           </div>
           <div>

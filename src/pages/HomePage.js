@@ -59,24 +59,30 @@ function HomePage({ navigateToProduct, navigateToSeller, addToCart, toggleWishli
         <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-4">
-              Discover the <span className="gradient-text">Beauty</span> of Tradition
+              Honoring <span className="gradient-text">Ismaili</span> Heritage
             </h1>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Explore our curated collection of sacred Hazrat Imam frames and exquisite handwoven white sarees.
-              Each piece tells a story of devotion and craftsmanship.
+              Explore our curated collection of sacred Hazrat Imam portraits, Ismaili calligraphy art,
+              and traditional ceremonial wear. Serving the global Ismaili community with devotion.
             </p>
             <div className="flex flex-wrap gap-4">
               <button
-                onClick={() => setCategoryFilter('Religious Art')}
+                onClick={() => setCategoryFilter('Hazrat Imam Portraits & Religious Art')}
                 className="bg-noor-gold text-noor-dark px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
               >
-                Shop Imam Frames
+                Hazrat Imam Portraits
               </button>
               <button
-                onClick={() => setCategoryFilter('Fashion')}
+                onClick={() => setCategoryFilter('Traditional Ismaili Wear')}
                 className="border-2 border-noor-gold text-noor-gold px-6 py-3 rounded-lg font-semibold hover:bg-noor-gold hover:text-noor-dark transition-colors"
               >
-                Shop White Sarees
+                Traditional Ismaili Wear
+              </button>
+              <button
+                onClick={() => setCategoryFilter('Community Items')}
+                className="border-2 border-noor-gold text-noor-gold px-6 py-3 rounded-lg font-semibold hover:bg-noor-gold hover:text-noor-dark transition-colors"
+              >
+                Community Items
               </button>
             </div>
           </div>
@@ -159,13 +165,15 @@ function HomePage({ navigateToProduct, navigateToSeller, addToCart, toggleWishli
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { icon: '🚚', title: 'Free Shipping', desc: 'On orders over $100' },
-              { icon: '🔒', title: 'Secure Payment', desc: 'SSL encrypted checkout' },
-              { icon: '↩️', title: 'Easy Returns', desc: '30-day return policy' },
-              { icon: '⭐', title: 'Premium Quality', desc: 'Handcrafted with care' },
+              { iconClass: 'fas fa-truck', title: 'Free Shipping', desc: 'On orders over $100' },
+              { iconClass: 'fas fa-lock', title: 'Secure Payment', desc: 'SSL encrypted checkout' },
+              { iconClass: 'fas fa-undo', title: 'Easy Returns', desc: '30-day return policy' },
+              { iconClass: 'fas fa-star', title: 'Premium Quality', desc: 'Handcrafted with care' },
             ].map((feature, index) => (
               <div key={index} className="text-center">
-                <span className="text-3xl mb-3 block">{feature.icon}</span>
+                <div className="w-14 h-14 bg-noor-gold/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <i className={`${feature.iconClass} text-2xl text-noor-gold`}></i>
+                </div>
                 <h3 className="font-semibold text-gray-800 mb-1">{feature.title}</h3>
                 <p className="text-sm text-gray-500">{feature.desc}</p>
               </div>
