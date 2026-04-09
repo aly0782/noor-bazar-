@@ -26,9 +26,10 @@ function SearchBar({ searchTerm, onSearchChange, categoryFilter, onCategoryChang
           className="px-3 py-2 bg-noor-dark border border-noor-dark-3 rounded text-sm text-noor-cream focus:outline-none focus:border-noor-gold/50"
         >
           <option value="all">All Categories</option>
-          <option value="Hazrat Imam Portraits & Religious Art">Hazrat Imam Portraits & Religious Art</option>
-          <option value="Traditional Ismaili Wear">Traditional Ismaili Wear</option>
-          <option value="Community Items">Community Items</option>
+          <option value="Sacred Collections">Sacred Collections</option>
+          <option value="Mijalis Fashion">Mijalis Fashion</option>
+          <option value="Religious Art">Religious Art</option>
+          <option value="Sacred Keepsakes">Sacred Keepsakes</option>
         </select>
 
         {/* Price Range */}

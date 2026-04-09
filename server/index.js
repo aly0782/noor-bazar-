@@ -11,84 +11,14 @@ app.use(express.json());
 
 // ============ MOCK DATABASE ============
 const products = [
-  {
-    id: 1,
-    name: "Hazrat Imam Portrait Frame - Golden",
-    description: "Exquisite hand-crafted golden frame featuring a sacred Hazrat Imam portrait for the Ismaili community.",
-    price: 149.99,
-    originalPrice: 199.99,
-    image: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=600",
-    category: "Hazrat Imam Portraits & Religious Art",
-    rating: 4.9,
-    reviewCount: 412,
-    stock: 15,
-    sellerId: 1
-  },
-  {
-    id: 2,
-    name: "Ismaili Calligraphy Art Frame - Silver",
-    description: "Beautiful silver-finished frame with sacred Islamic calligraphy revered in the Ismaili tradition.",
-    price: 89.99,
-    originalPrice: 129.99,
-    image: "https://images.unsplash.com/photo-1579187707643-35646d22b596?w=600",
-    category: "Hazrat Imam Portraits & Religious Art",
-    rating: 4.8,
-    reviewCount: 287,
-    stock: 22,
-    sellerId: 1
-  },
-  {
-    id: 3,
-    name: "Hazrat Imam Miniature Desktop Frame",
-    description: "Compact desktop frame for daily spiritual inspiration, cherished by the Ismaili community.",
-    price: 45.99,
-    originalPrice: 59.99,
-    image: "https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?w=600",
-    category: "Hazrat Imam Portraits & Religious Art",
-    rating: 4.9,
-    reviewCount: 356,
-    stock: 40,
-    sellerId: 1
-  },
-  {
-    id: 4,
-    name: "Traditional Ismaili White Silk Dress",
-    description: "Luxurious pure white silk garment for Ismaili ceremonies and Jamatkhana gatherings.",
-    price: 299.99,
-    originalPrice: 449.99,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600",
-    category: "Traditional Ismaili Wear",
-    rating: 5.0,
-    reviewCount: 523,
-    stock: 8,
-    sellerId: 2
-  },
-  {
-    id: 5,
-    name: "Ismaili Ceremonial White Chiffon Outfit",
-    description: "Graceful white chiffon outfit for Ismaili religious gatherings and celebrations.",
-    price: 129.99,
-    originalPrice: 179.99,
-    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600",
-    category: "Traditional Ismaili Wear",
-    rating: 4.8,
-    reviewCount: 198,
-    stock: 18,
-    sellerId: 2
-  },
-  {
-    id: 6,
-    name: "Ismaili Community Prayer Cap (Topi)",
-    description: "Traditional Ismaili prayer cap with fine embroidery for Jamatkhana prayers.",
-    price: 39.99,
-    originalPrice: 54.99,
-    image: "https://images.unsplash.com/photo-1585036156171-384164a8c696?w=600",
-    category: "Community Items",
-    rating: 4.9,
-    reviewCount: 445,
-    stock: 30,
-    sellerId: 2
-  }
+  { id: 1, name: "Green Jade Tasbi - 99 Beads", description: "Beautiful green jade tasbi with silver tassel cap.", price: 45, originalPrice: 75, image: "/images/products/green-tasbi.jpg", category: "Sacred Collections", rating: 4.9, reviewCount: 234, stock: 18, sellerId: 1 },
+  { id: 2, name: "Blue Aquamarine Tasbi - 33 Beads", description: "Stunning blue aquamarine tasbi with 33 beads.", price: 38, originalPrice: 65, image: "/images/products/blue-tasbi.png", category: "Sacred Collections", rating: 4.8, reviewCount: 189, stock: 22, sellerId: 2 },
+  { id: 3, name: "White Lace Mijalis Gown - Premium", description: "Exquisite white lace Mijalis dress for community gatherings.", price: 185, originalPrice: 320, image: "/images/products/white-mijalis-dress.jpg", category: "Mijalis Fashion", rating: 5.0, reviewCount: 156, stock: 12, sellerId: 2 },
+  { id: 4, name: "Blue Bandani Lehenga - Gold Embroidered", description: "Stunning blue bandani lehenga with gold and silver sequin work.", price: 245, originalPrice: 420, image: "/images/products/blue-bandani-lehenga.jpg", category: "Mijalis Fashion", rating: 4.9, reviewCount: 267, stock: 8, sellerId: 2 },
+  { id: 5, name: "Teal Heritage Dress with Gold Trim", description: "Beautiful teal traditional dress with gold trim.", price: 165, originalPrice: 280, image: "/images/products/teal-heritage-dress.jpg", category: "Mijalis Fashion", rating: 4.7, reviewCount: 198, stock: 15, sellerId: 2 },
+  { id: 6, name: "Hazrat Imam Portrait Frame - Premium Black", description: "Beautifully framed portrait of Hazrat Imam.", price: 89, originalPrice: 150, image: "/images/products/hazrat-imam-frame.png", category: "Religious Art", rating: 5.0, reviewCount: 412, stock: 25, sellerId: 1 },
+  { id: 7, name: "Niyaz Rose Water Bottle - Crystal Clear", description: "Elegant crystal bottle for blessed niyaz water.", price: 52, originalPrice: 89, image: "/images/products/niyaz-bottle.png", category: "Sacred Keepsakes", rating: 4.9, reviewCount: 298, stock: 30, sellerId: 1 },
+  { id: 8, name: "Blue Bandani Saree - Gold & Silver Sequins", description: "Exquisite blue bandani saree with sequin embroidery.", price: 275, originalPrice: 480, image: "/images/products/blue-bandani-sequins.jpg", category: "Mijalis Fashion", rating: 4.9, reviewCount: 345, stock: 6, sellerId: 2 }
 ];
 
 const sellers = [

@@ -5,7 +5,7 @@ const reviews = {
       userName: "Ahmed K.",
       rating: 5,
       date: "2024-03-10",
-      text: "Absolutely stunning frame! The gold leaf work is exquisite and the attention to detail is remarkable. It's now the centerpiece of our living room. Highly recommended!",
+      text: "Beautiful green jade tasbi! The beads are smooth and the silver tassel cap is exquisite. Perfect for my daily prayers. Ya Ali Madad!",
       helpful: 47,
       verified: true
     },
@@ -14,207 +14,256 @@ const reviews = {
       userName: "Fatima R.",
       rating: 5,
       date: "2024-02-28",
-      text: "Purchased this as a gift for my parents and they were overjoyed. The quality exceeded our expectations. The packaging was also very careful and secure.",
+      text: "Purchased this tasbi as a gift for my father and he was overjoyed. The jade quality exceeded our expectations. Wonderful craftsmanship.",
       helpful: 32,
       verified: true
     },
     {
       id: 3,
-      userName: "Omar S.",
+      userName: "Salim A.",
       rating: 5,
       date: "2024-02-15",
-      text: "Third purchase from Hazrat Imam Heritage Artisans and as always, impeccable quality. The frame arrived in perfect condition and looks even better in person than in the photos.",
+      text: "Third purchase from Hazrat Imam Heritage Artisans and as always, impeccable quality. The 99 beads are perfectly weighted.",
       helpful: 28,
-      verified: true
-    },
-    {
-      id: 4,
-      userName: "Zainab M.",
-      rating: 4,
-      date: "2024-01-20",
-      text: "Beautiful frame with great craftsmanship. The only reason for 4 stars is that delivery took slightly longer than expected, but the product itself is flawless.",
-      helpful: 15,
       verified: true
     }
   ],
   2: [
     {
-      id: 5,
-      userName: "Hassan A.",
+      id: 4,
+      userName: "Nadia R.",
       rating: 5,
       date: "2024-03-05",
-      text: "The calligraphy work on this frame is breathtaking. You can tell it's genuinely hand-painted. A masterpiece that brings peace to our home.",
+      text: "The blue aquamarine beads are stunning. Perfect for my Subhanallah recitations. The red silk tassel adds such an elegant touch.",
       helpful: 38,
       verified: true
     },
     {
-      id: 6,
-      userName: "Mariam B.",
+      id: 5,
+      userName: "Yasmin B.",
       rating: 5,
       date: "2024-02-20",
-      text: "Bought this for our new home and it's perfect. The silver finish is elegant and the calligraphy is beautifully done. Everyone who visits comments on it.",
+      text: "Bought this for our Chandrat gathering and everyone was asking where I got it. Premium quality and beautiful traditional design.",
       helpful: 25,
       verified: true
     },
     {
-      id: 7,
-      userName: "Yusuf T.",
+      id: 6,
+      userName: "Amir H.",
       rating: 4,
       date: "2024-01-10",
-      text: "Great quality frame. The calligraphy is precise and the silver finish is very refined. Would love to see more size options available.",
+      text: "Great quality tasbi. The aquamarine stones are genuine and the craftsmanship is evident. Would love to see more color options.",
       helpful: 19,
       verified: true
     }
   ],
   3: [
     {
-      id: 8,
-      userName: "Amina J.",
+      id: 7,
+      userName: "Ruksana M.",
       rating: 5,
       date: "2024-03-12",
-      text: "Perfect for my office desk! The miniature size is just right and the detail is impressive for such a small piece. Great gift idea too.",
+      text: "The white lace Mijalis gown is absolutely stunning! Wore it to our Jamatkhana gathering and received so many compliments. The embroidery is delicate and beautiful.",
       helpful: 42,
       verified: true
     },
     {
-      id: 9,
-      userName: "Ibrahim H.",
+      id: 8,
+      userName: "Karim A.",
       rating: 5,
       date: "2024-02-25",
-      text: "Bought 5 of these as gifts for colleagues and everyone loved them. The ceramic quality is excellent and the gold trim adds a premium touch.",
+      text: "Purchased for my wife and she loves it. The fabric is breathable and the draping is elegant. Perfect for community events.",
       helpful: 35,
       verified: true
     },
     {
-      id: 10,
-      userName: "Safiya N.",
+      id: 9,
+      userName: "Aliya M.",
       rating: 5,
       date: "2024-02-08",
-      text: "Such a lovely piece! I have it on my nightstand and it brings me peace every morning. The easel stand is sturdy and well-designed.",
+      text: "Premium quality as described. The white lace is so delicate and the stitching is flawless. Will order again for sure!",
       helpful: 22,
       verified: true
     }
   ],
   4: [
     {
-      id: 11,
+      id: 10,
       userName: "Priya S.",
       rating: 5,
       date: "2024-03-15",
-      text: "This saree is a dream come true! The silk quality is unmatched and the silver zari work is absolutely divine. Worth every penny. I received so many compliments wearing this.",
+      text: "This blue bandani lehenga is a dream! The gold sequin work is intricate and the draping is perfect. Wore it to our Jamatherana celebration and felt so beautiful.",
       helpful: 58,
       verified: true
     },
     {
-      id: 12,
-      userName: "Ananya P.",
+      id: 11,
+      userName: "Nadia I.",
       rating: 5,
       date: "2024-03-01",
-      text: "The most beautiful saree I've ever owned. The Banarasi weaving is authentic and the pure white color is stunning. The blouse piece is also very generous in size.",
+      text: "The most beautiful lehenga I've ever owned. The blue bandani pattern is authentic and the gold embroidery is stunning. Worth every penny!",
       helpful: 45,
       verified: true
     },
     {
-      id: 13,
-      userName: "Lakshmi D.",
+      id: 12,
+      userName: "Fatima K.",
       rating: 5,
       date: "2024-02-14",
-      text: "Purchased for my daughter's engagement and it was absolutely perfect. The silk has a beautiful sheen and drapes magnificently. Ismaili Sacred Collections never disappoints!",
+      text: "Purchased for a special community celebration. The silver sequin work complements the gold beautifully. Everyone asked where I got it!",
       helpful: 40,
       verified: true
     },
     {
-      id: 14,
-      userName: "Meera K.",
-      rating: 5,
+      id: 13,
+      userName: "Yasmin T.",
+      rating: 4,
       date: "2024-01-25",
-      text: "I own several Banarasi sarees and this one from Ismaili Sacred Collections is by far the finest. The craftsmanship is evident in every thread. Highly recommend!",
+      text: "Beautiful lehenga with gorgeous embroidery. The silk quality is excellent. Only wish it came in more sizes. Overall a wonderful purchase.",
       helpful: 33,
-      verified: true
-    },
-    {
-      id: 15,
-      userName: "Deepa R.",
-      rating: 5,
-      date: "2024-01-10",
-      text: "Second purchase from this seller and the quality is consistently excellent. This white saree is now my most treasured piece in my collection.",
-      helpful: 27,
       verified: true
     }
   ],
   5: [
     {
-      id: 16,
-      userName: "Kavya M.",
+      id: 14,
+      userName: "Safiya N.",
       rating: 5,
       date: "2024-03-08",
-      text: "The chiffon quality is superb and the pearl embroidery is delicate and beautiful. Such a versatile saree - I've worn it to both formal and casual events.",
+      text: "The teal color is even more beautiful in person! The gold trim adds such elegance. Perfect for both formal and community occasions.",
       helpful: 30,
       verified: true
     },
     {
-      id: 17,
-      userName: "Nisha V.",
+      id: 15,
+      userName: "Ruksana P.",
       rating: 5,
       date: "2024-02-20",
-      text: "Lightweight, elegant, and absolutely gorgeous. The drape of this chiffon saree is perfect. The pearl work along the border is a lovely touch.",
+      text: "Comfortable, elegant, and timeless. The traditional neckline is lovely and the fit is wonderful. Great value for the quality.",
       helpful: 24,
       verified: true
     },
     {
-      id: 18,
-      userName: "Aisha L.",
+      id: 16,
+      userName: "Amina J.",
       rating: 4,
       date: "2024-01-30",
-      text: "Beautiful saree with lovely pearl embroidery. The fabric is good quality chiffon. Would appreciate more color options in this design.",
+      text: "Beautiful teal dress with lovely gold embroidery. The linen fabric is good quality and breathable. Would appreciate more trim options.",
       helpful: 18,
       verified: true
     }
   ],
   6: [
     {
-      id: 19,
-      userName: "Radha G.",
+      id: 17,
+      userName: "Omar S.",
       rating: 5,
       date: "2024-03-14",
-      text: "The best cotton saree I've ever bought! The organic cotton is so soft and breathable. The temple border is gorgeous. Perfect for daily wear and still looks elegant.",
+      text: "The Hazrat Imam portrait frame is now the centerpiece of our prayer room. The premium black frame and protected glass make it look so distinguished. A blessed addition to our home.",
       helpful: 52,
       verified: true
     },
     {
-      id: 20,
-      userName: "Sunita T.",
+      id: 18,
+      userName: "Salim K.",
       rating: 5,
       date: "2024-03-02",
-      text: "Love the feel of organic cotton! This saree is comfortable even in hot weather and the gold temple border gives it a classic look. Amazing value for the price.",
+      text: "Ordered this as a gift for my parents and they were moved to tears. The print quality is incredible and the frame is solid. Highly recommend!",
       helpful: 39,
       verified: true
     },
     {
-      id: 21,
-      userName: "Padma B.",
+      id: 19,
+      userName: "Zainab M.",
       rating: 5,
       date: "2024-02-18",
-      text: "I've bought 3 of these already - one for myself and two as gifts. The quality is consistent and the handloom texture gives it such a beautiful character.",
+      text: "I've bought 3 of these already for family members. The quality is consistently excellent. Everyone deserves this blessed portrait in their home.",
       helpful: 34,
       verified: true
     },
     {
-      id: 22,
-      userName: "Geeta H.",
-      rating: 4,
+      id: 20,
+      userName: "Ibrahim H.",
+      rating: 5,
       date: "2024-01-15",
-      text: "Very comfortable saree with nice temple border. The cotton quality is genuine organic. Only wish the pallu had more detailed work, but overall a great buy.",
+      text: "Purchased for our Jamatherana fundraiser and it was the most popular item. Beautiful quality and arrived perfectly packaged.",
       helpful: 20,
       verified: true
     },
     {
-      id: 23,
-      userName: "Uma S.",
+      id: 21,
+      userName: "Mariam B.",
       rating: 5,
       date: "2024-01-05",
-      text: "Perfect everyday saree! Soft, breathable, and elegant. The gold border elevates the whole look. Excellent quality from Ismaili Sacred Collections as always.",
+      text: "Simply beautiful. The portrait captures the grace and dignity of Hazrat Imam perfectly. A sacred treasure for any Ismaili home.",
       helpful: 28,
+      verified: true
+    }
+  ],
+  7: [
+    {
+      id: 22,
+      userName: "Amir R.",
+      rating: 5,
+      date: "2024-03-13",
+      text: "The niyaz rose water bottle is exquisite! The gold calligraphy is beautiful and the crystal glass is premium quality. Perfect for blessed water.",
+      helpful: 41,
+      verified: true
+    },
+    {
+      id: 23,
+      userName: "Fatima A.",
+      rating: 5,
+      date: "2024-03-01",
+      text: "Such a thoughtful design for niyaz water. The air-tight seal keeps everything fresh. The gold calligraphy makes it so special. Ya Ali Madad!",
+      helpful: 36,
+      verified: true
+    },
+    {
+      id: 24,
+      userName: "Nadia S.",
+      rating: 5,
+      date: "2024-02-15",
+      text: "Bought several for our community gathering. Everyone loved them. The crystal glass catches the light beautifully. A sacred keepsake indeed.",
+      helpful: 29,
+      verified: true
+    }
+  ],
+  8: [
+    {
+      id: 25,
+      userName: "Ruksana G.",
+      rating: 5,
+      date: "2024-03-14",
+      text: "The blue bandani saree with gold and silver sequins is absolutely magnificent! The craftsmanship is visible in every detail. Wore it to our Chandrat celebration.",
+      helpful: 55,
+      verified: true
+    },
+    {
+      id: 26,
+      userName: "Yasmin L.",
+      rating: 5,
+      date: "2024-03-02",
+      text: "Most beautiful saree I've ever purchased. The sequin work is intricate and the blue silk is luxurious. Perfect for special Ismaili celebrations.",
+      helpful: 42,
+      verified: true
+    },
+    {
+      id: 27,
+      userName: "Sunita T.",
+      rating: 5,
+      date: "2024-02-18",
+      text: "Bought this for a Jamatherana fundraiser gala and it was the showstopper! The gold and silver sequins shimmer beautifully. Worth every penny.",
+      helpful: 38,
+      verified: true
+    },
+    {
+      id: 28,
+      userName: "Safiya D.",
+      rating: 4,
+      date: "2024-01-20",
+      text: "Gorgeous saree with stunning embroidery. The bandani pattern is authentic and the colors are vibrant. Only wish it came with a matching blouse piece.",
+      helpful: 25,
       verified: true
     }
   ]

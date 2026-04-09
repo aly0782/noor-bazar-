@@ -14,7 +14,7 @@ const sellers = [
     responseTime: "Within 2 hours",
     shippingPolicy: "Free shipping on orders over $100",
     returnPolicy: "30-day hassle-free returns",
-    productIds: [1, 2, 3]
+    productIds: [1, 6, 7]
   },
   {
     id: 2,
@@ -27,11 +27,11 @@ const sellers = [
     joinedDate: "2021-11-20",
     avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop",
     coverImage: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200&h=400&fit=crop",
-    specialties: ["Mijalis Fashion", "Sacred Items", "Community Keepsakes"],
+    specialties: ["Mijalis Fashion", "Tasbi Collections", "Community Keepsakes"],
     responseTime: "Within 1 hour",
     shippingPolicy: "Free worldwide shipping to all Ismaili communities",
     returnPolicy: "45-day money-back guarantee",
-    productIds: [4, 5, 6]
+    productIds: [2, 3, 4, 5, 8]
   }
 ];
 

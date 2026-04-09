@@ -3,12 +3,12 @@ import products from '../data/products';
 import sellers from '../data/sellers';
 
 const mockAdminOrders = [
-  { id: 'NOR-A001', customer: 'Ahmed K.', seller: 'Hazrat Imam Heritage Artisans', total: 149.99, status: 'Delivered', date: '2024-03-10' },
-  { id: 'NOR-A002', customer: 'Karim A.', seller: 'Ismaili Sacred Collections', total: 299.99, status: 'Shipped', date: '2024-03-12' },
-  { id: 'NOR-A003', customer: 'Fatima R.', seller: 'Hazrat Imam Heritage Artisans', total: 89.99, status: 'Processing', date: '2024-03-14' },
-  { id: 'NOR-A004', customer: 'Nadia I.', seller: 'Ismaili Sacred Collections', total: 129.99, status: 'Delivered', date: '2024-03-08' },
-  { id: 'NOR-A005', customer: 'Omar S.', seller: 'Hazrat Imam Heritage Artisans', total: 45.99, status: 'Shipped', date: '2024-03-15' },
-  { id: 'NOR-A006', customer: 'Aliya M.', seller: 'Ismaili Sacred Collections', total: 39.99, status: 'Processing', date: '2024-03-16' },
+  { id: 'NOR-A001', customer: 'Ahmed K.', seller: 'Hazrat Imam Heritage Artisans', total: 45, status: 'Delivered', date: '2024-03-10' },
+  { id: 'NOR-A002', customer: 'Karim A.', seller: 'Ismaili Sacred Collections', total: 245, status: 'Shipped', date: '2024-03-12' },
+  { id: 'NOR-A003', customer: 'Fatima R.', seller: 'Hazrat Imam Heritage Artisans', total: 89, status: 'Processing', date: '2024-03-14' },
+  { id: 'NOR-A004', customer: 'Nadia I.', seller: 'Ismaili Sacred Collections', total: 185, status: 'Delivered', date: '2024-03-08' },
+  { id: 'NOR-A005', customer: 'Omar S.', seller: 'Hazrat Imam Heritage Artisans', total: 52, status: 'Shipped', date: '2024-03-15' },
+  { id: 'NOR-A006', customer: 'Aliya M.', seller: 'Ismaili Sacred Collections', total: 275, status: 'Processing', date: '2024-03-16' },
 ];
 
 function AdminDashboardPage({ navigate }) {

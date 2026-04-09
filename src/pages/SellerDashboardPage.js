@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
 const mockOrders = [
-  { id: 'ORD-001', customer: 'Ahmed K.', product: 'Hazrat Imam Portrait Frame - Golden', amount: 149.99, status: 'Delivered', date: '2024-03-10' },
-  { id: 'ORD-002', customer: 'Fatima R.', product: 'Ismaili Calligraphy Art Frame', amount: 89.99, status: 'Shipped', date: '2024-03-12' },
-  { id: 'ORD-003', customer: 'Omar S.', product: 'Hazrat Imam Miniature Desktop Frame', amount: 91.98, status: 'Processing', date: '2024-03-14' },
-  { id: 'ORD-004', customer: 'Karim A.', product: 'Traditional Ismaili White Silk Dress', amount: 299.99, status: 'Delivered', date: '2024-03-08' },
-  { id: 'ORD-005', customer: 'Zainab M.', product: 'Hazrat Imam Portrait Frame - Golden', amount: 149.99, status: 'Processing', date: '2024-03-15' },
+  { id: 'ORD-001', customer: 'Ahmed K.', product: 'Green Jade Tasbi - 99 Beads', amount: 45, status: 'Delivered', date: '2024-03-10' },
+  { id: 'ORD-002', customer: 'Salim A.', product: 'Hazrat Imam Portrait Frame', amount: 89, status: 'Shipped', date: '2024-03-12' },
+  { id: 'ORD-003', customer: 'Omar S.', product: 'Niyaz Rose Water Bottle', amount: 52, status: 'Processing', date: '2024-03-14' },
+  { id: 'ORD-004', customer: 'Karim A.', product: 'Blue Bandani Lehenga', amount: 245, status: 'Delivered', date: '2024-03-08' },
+  { id: 'ORD-005', customer: 'Zainab M.', product: 'Green Jade Tasbi - 99 Beads', amount: 45, status: 'Processing', date: '2024-03-15' },
 ];
 
 const mockInventory = [
-  { id: 1, name: 'Hazrat Imam Portrait Frame - Golden', price: 149.99, stock: 15, status: 'Active' },
-  { id: 2, name: 'Ismaili Calligraphy Art Frame - Silver', price: 89.99, stock: 22, status: 'Active' },
-  { id: 3, name: 'Hazrat Imam Miniature Desktop Frame', price: 45.99, stock: 40, status: 'Active' },
+  { id: 1, name: 'Green Jade Tasbi - 99 Beads', price: 45, stock: 18, status: 'Active' },
+  { id: 6, name: 'Hazrat Imam Portrait Frame - Premium Black', price: 89, stock: 25, status: 'Active' },
+  { id: 7, name: 'Niyaz Rose Water Bottle - Crystal Clear', price: 52, stock: 30, status: 'Active' },
 ];
 
 function SellerDashboardPage({ navigate }) {
