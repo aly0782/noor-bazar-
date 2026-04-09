@@ -20,7 +20,7 @@ function SellersPage({ navigateToSeller }) {
       </div>
 
       {/* Become a Seller */}
-      <div className="mt-16 bg-gradient-to-r from-noor-dark to-noor-accent rounded-2xl p-8 md:p-12 text-white text-center">
+      <div className="mt-16 bg-gradient-to-r from-noor-dark-2 to-noor-teal rounded-2xl p-8 md:p-12 text-white text-center">
         <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Become a Seller on Noor</h2>
         <p className="text-gray-300 max-w-xl mx-auto mb-6">
           Join our marketplace and reach thousands of customers looking for authentic, handcrafted products.

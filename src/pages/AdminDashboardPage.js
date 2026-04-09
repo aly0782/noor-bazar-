@@ -3,12 +3,12 @@ import products from '../data/products';
 import sellers from '../data/sellers';
 
 const mockAdminOrders = [
-  { id: 'NOR-A001', customer: 'Ahmed K.', seller: 'Hazrat Imam Heritage Crafts', total: 149.99, status: 'Delivered', date: '2024-03-10' },
-  { id: 'NOR-A002', customer: 'Karim A.', seller: 'Ismaili Artisan Textiles', total: 299.99, status: 'Shipped', date: '2024-03-12' },
-  { id: 'NOR-A003', customer: 'Fatima R.', seller: 'Hazrat Imam Heritage Crafts', total: 89.99, status: 'Processing', date: '2024-03-14' },
-  { id: 'NOR-A004', customer: 'Nadia I.', seller: 'Ismaili Artisan Textiles', total: 129.99, status: 'Delivered', date: '2024-03-08' },
-  { id: 'NOR-A005', customer: 'Omar S.', seller: 'Hazrat Imam Heritage Crafts', total: 45.99, status: 'Shipped', date: '2024-03-15' },
-  { id: 'NOR-A006', customer: 'Aliya M.', seller: 'Ismaili Artisan Textiles', total: 39.99, status: 'Processing', date: '2024-03-16' },
+  { id: 'NOR-A001', customer: 'Ahmed K.', seller: 'Hazrat Imam Heritage Artisans', total: 149.99, status: 'Delivered', date: '2024-03-10' },
+  { id: 'NOR-A002', customer: 'Karim A.', seller: 'Ismaili Sacred Collections', total: 299.99, status: 'Shipped', date: '2024-03-12' },
+  { id: 'NOR-A003', customer: 'Fatima R.', seller: 'Hazrat Imam Heritage Artisans', total: 89.99, status: 'Processing', date: '2024-03-14' },
+  { id: 'NOR-A004', customer: 'Nadia I.', seller: 'Ismaili Sacred Collections', total: 129.99, status: 'Delivered', date: '2024-03-08' },
+  { id: 'NOR-A005', customer: 'Omar S.', seller: 'Hazrat Imam Heritage Artisans', total: 45.99, status: 'Shipped', date: '2024-03-15' },
+  { id: 'NOR-A006', customer: 'Aliya M.', seller: 'Ismaili Sacred Collections', total: 39.99, status: 'Processing', date: '2024-03-16' },
 ];
 
 function AdminDashboardPage({ navigate }) {
@@ -270,7 +270,7 @@ function AdminDashboardPage({ navigate }) {
                 <div key={index} className="flex-1 flex flex-col items-center">
                   <span className="text-xs font-medium text-gray-600 mb-1">${(data.revenue / 1000).toFixed(1)}k</span>
                   <div
-                    className="w-full bg-gradient-to-t from-noor-accent to-blue-400 rounded-t-lg transition-all duration-500"
+                    className="w-full bg-gradient-to-t from-noor-gold to-noor-gold-light rounded-t-lg transition-all duration-500"
                     style={{ height: `${(data.revenue / maxRevenue) * 200}px` }}
                   />
                   <span className="text-xs text-gray-500 mt-2">{data.month}</span>

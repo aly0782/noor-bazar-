@@ -4,45 +4,47 @@ import StarRating from './StarRating';
 function SellerCard({ seller, onNavigate }) {
   return (
     <div
-      className="bg-white rounded-xl shadow-md overflow-hidden cursor-pointer product-card animate-fadeIn"
+      className="bg-noor-dark-2 border border-noor-dark-3 rounded-lg overflow-hidden cursor-pointer product-card animate-fadeIn"
       onClick={() => onNavigate(seller.id)}
     >
-      <div className="h-32 bg-cover bg-center" style={{ backgroundImage: `url(${seller.coverImage})` }}>
-        <div className="h-full bg-gradient-to-t from-black/60 to-transparent" />
+      <div className="h-32 bg-cover bg-center relative" style={{ backgroundImage: `url(${seller.coverImage})` }}>
+        <div className="absolute inset-0 bg-gradient-to-t from-noor-dark-2 via-noor-dark/60 to-transparent" />
       </div>
-      <div className="p-4 -mt-10 relative">
+      <div className="p-5 -mt-10 relative">
         <div className="flex items-end space-x-3 mb-3">
-          <img
-            src={seller.avatar}
-            alt={seller.name}
-            className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover"
-          />
+          <div className="relative">
+            <img
+              src={seller.avatar}
+              alt={seller.name}
+              className="w-16 h-16 rounded-full border-2 border-noor-gold shadow-lg object-cover"
+            />
+            {seller.verified && (
+              <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-noor-teal rounded-full flex items-center justify-center">
+                <svg className="w-3 h-3 text-noor-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+              </div>
+            )}
+          </div>
           <div>
-            <div className="flex items-center space-x-1">
-              <h3 className="font-semibold text-gray-800">{seller.name}</h3>
-              {seller.verified && (
-                <span className="bg-blue-500 text-white text-xs px-1.5 py-0.5 rounded-full flex items-center">
-                  <svg className="w-3 h-3 mr-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Verified
-                </span>
-              )}
-            </div>
-            <p className="text-xs text-gray-500">{seller.location}</p>
+            <h3 className="font-display font-semibold text-noor-cream">{seller.name}</h3>
+            <p className="text-xs text-noor-gold flex items-center">
+              <i className="fas fa-map-marker-alt mr-1 text-noor-teal-light"></i>
+              {seller.location}
+            </p>
           </div>
         </div>
-        <p className="text-sm text-gray-600 line-clamp-2 mb-3">{seller.description}</p>
+        <p className="text-sm text-noor-cream/70 line-clamp-2 mb-3 leading-relaxed">{seller.description}</p>
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <StarRating rating={seller.rating} size="sm" />
-            <span className="text-sm text-gray-500 ml-1">{seller.rating}</span>
+            <span className="text-sm text-noor-gold ml-1">{seller.rating}</span>
           </div>
-          <span className="text-sm text-gray-500">{seller.totalSales.toLocaleString()} sales</span>
+          <span className="text-xs text-noor-cream/50 tracking-wide">{seller.totalSales.toLocaleString()} sales</span>
         </div>
-        <div className="flex flex-wrap gap-1 mt-3">
+        <div className="flex flex-wrap gap-1.5 mt-3">
           {seller.specialties.slice(0, 3).map((specialty, index) => (
-            <span key={index} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
+            <span key={index} className="text-xs bg-noor-teal/20 text-noor-teal-light px-2.5 py-1 rounded border border-noor-teal/30">
               {specialty}
             </span>
           ))}

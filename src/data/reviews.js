@@ -23,7 +23,7 @@ const reviews = {
       userName: "Omar S.",
       rating: 5,
       date: "2024-02-15",
-      text: "Third purchase from Hazrat Imam Heritage Crafts and as always, impeccable quality. The frame arrived in perfect condition and looks even better in person than in the photos.",
+      text: "Third purchase from Hazrat Imam Heritage Artisans and as always, impeccable quality. The frame arrived in perfect condition and looks even better in person than in the photos.",
       helpful: 28,
       verified: true
     },
@@ -119,7 +119,7 @@ const reviews = {
       userName: "Lakshmi D.",
       rating: 5,
       date: "2024-02-14",
-      text: "Purchased for my daughter's engagement and it was absolutely perfect. The silk has a beautiful sheen and drapes magnificently. Ismaili Artisan Textiles never disappoints!",
+      text: "Purchased for my daughter's engagement and it was absolutely perfect. The silk has a beautiful sheen and drapes magnificently. Ismaili Sacred Collections never disappoints!",
       helpful: 40,
       verified: true
     },
@@ -128,7 +128,7 @@ const reviews = {
       userName: "Meera K.",
       rating: 5,
       date: "2024-01-25",
-      text: "I own several Banarasi sarees and this one from Ismaili Artisan Textiles is by far the finest. The craftsmanship is evident in every thread. Highly recommend!",
+      text: "I own several Banarasi sarees and this one from Ismaili Sacred Collections is by far the finest. The craftsmanship is evident in every thread. Highly recommend!",
       helpful: 33,
       verified: true
     },
@@ -213,7 +213,7 @@ const reviews = {
       userName: "Uma S.",
       rating: 5,
       date: "2024-01-05",
-      text: "Perfect everyday saree! Soft, breathable, and elegant. The gold border elevates the whole look. Excellent quality from Ismaili Artisan Textiles as always.",
+      text: "Perfect everyday saree! Soft, breathable, and elegant. The gold border elevates the whole look. Excellent quality from Ismaili Sacred Collections as always.",
       helpful: 28,
       verified: true
     }

@@ -63,7 +63,7 @@ function SellerDashboardPage({ navigate }) {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-3xl font-display font-bold text-noor-dark">Seller Dashboard</h1>
-          <p className="text-gray-500 text-sm">Welcome back, Hazrat Imam Heritage Crafts</p>
+          <p className="text-gray-500 text-sm">Welcome back, Hazrat Imam Heritage Artisans</p>
         </div>
         <button
           onClick={() => navigate('home')}

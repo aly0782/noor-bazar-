@@ -28,7 +28,7 @@ function WishlistPage({ wishlist, toggleWishlist, moveToCart, navigateToProduct 
                 onClick={(e) => { e.stopPropagation(); toggleWishlist(item); }}
                 className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md heart-btn"
               >
-                <svg className="w-5 h-5 text-noor-highlight" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-noor-gold" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </button>

@@ -261,7 +261,7 @@ function App() {
   };
 
   return (
-    <div className="App min-h-screen bg-gray-50">
+    <div className="App min-h-screen bg-noor-dark">
       <Header
         cart={cart}
         wishlistCount={wishlist.length}
@@ -272,51 +272,73 @@ function App() {
         setSellerMode={setSellerMode}
       />
       {notification && (
-        <div className={`fixed top-20 right-4 z-50 px-6 py-3 rounded-lg shadow-lg text-white font-medium transition-all duration-300 ${
-          notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'
+        <div className={`fixed top-20 right-4 z-50 px-6 py-3 rounded shadow-lg font-medium text-sm tracking-wide transition-all duration-300 ${
+          notification.type === 'success' ? 'bg-noor-teal text-noor-cream border border-noor-teal-light/30' : 'bg-red-900 text-red-200 border border-red-700/30'
         }`}>
           {notification.message}
         </div>
       )}
       <main>{renderPage()}</main>
-      <footer className="bg-noor-dark text-white py-12 mt-16">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-2xl font-display font-bold text-noor-gold mb-4">Noor</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Your premier Ismaili marketplace for sacred Hazrat Imam art and
-              traditional wear. Serving the global Ismaili community with devotion.
+      <footer className="bg-noor-dark-2 border-t border-noor-dark-3 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Top section with logo */}
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center space-x-1.5 mb-3">
+              <span className="text-noor-gold">&#10022;</span>
+              <span className="text-xl font-display font-bold text-noor-cream tracking-wide">Noor</span>
+              <span className="text-xl font-display font-bold text-noor-gold tracking-wide">Bazaar</span>
+            </div>
+            <p className="text-noor-cream/50 text-sm max-w-md mx-auto leading-relaxed tracking-wide">
+              Your premier marketplace for sacred art and traditional textiles.
+              Connecting Ismaili artisans with the global community.
             </p>
           </div>
-          <div>
-            <h4 className="font-semibold mb-3">Quick Links</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><button onClick={() => navigate('home')} className="hover:text-noor-gold transition-colors">Home</button></li>
-              <li><button onClick={() => navigate('sellers')} className="hover:text-noor-gold transition-colors">Sellers</button></li>
-              <li><button onClick={() => navigate('cart')} className="hover:text-noor-gold transition-colors">Cart</button></li>
-              <li><button onClick={() => navigate('wishlist')} className="hover:text-noor-gold transition-colors">Wishlist</button></li>
-            </ul>
+
+          <div className="gold-divider mb-12" />
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h4 className="text-noor-gold font-display text-sm tracking-widest-xl uppercase mb-4">Quick Links</h4>
+              <ul className="space-y-2.5 text-sm">
+                <li><button onClick={() => navigate('home')} className="text-noor-cream/60 hover:text-noor-gold transition-colors tracking-wide">Home</button></li>
+                <li><button onClick={() => navigate('sellers')} className="text-noor-cream/60 hover:text-noor-gold transition-colors tracking-wide">Artisans</button></li>
+                <li><button onClick={() => navigate('cart')} className="text-noor-cream/60 hover:text-noor-gold transition-colors tracking-wide">Cart</button></li>
+                <li><button onClick={() => navigate('wishlist')} className="text-noor-cream/60 hover:text-noor-gold transition-colors tracking-wide">Saved Items</button></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-noor-gold font-display text-sm tracking-widest-xl uppercase mb-4">Categories</h4>
+              <ul className="space-y-2.5 text-sm">
+                <li className="text-noor-cream/60 hover:text-noor-gold transition-colors cursor-pointer tracking-wide">Religious Art</li>
+                <li className="text-noor-cream/60 hover:text-noor-gold transition-colors cursor-pointer tracking-wide">Tasbi Collections</li>
+                <li className="text-noor-cream/60 hover:text-noor-gold transition-colors cursor-pointer tracking-wide">Mijalis Fashion</li>
+                <li className="text-noor-cream/60 hover:text-noor-gold transition-colors cursor-pointer tracking-wide">Sacred Keepsakes</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-noor-gold font-display text-sm tracking-widest-xl uppercase mb-4">Community</h4>
+              <ul className="space-y-2.5 text-sm">
+                <li className="text-noor-cream/60 tracking-wide">Ya Ali Madad</li>
+                <li className="text-noor-cream/60 tracking-wide">Jamatherana Support</li>
+                <li className="text-noor-cream/60 tracking-wide">Chandrat Giving</li>
+                <li className="text-noor-cream/60 tracking-wide">Global Ismaili Network</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-noor-gold font-display text-sm tracking-widest-xl uppercase mb-4">Contact</h4>
+              <ul className="space-y-2.5 text-sm">
+                <li className="text-noor-cream/60 tracking-wide">support@noorbazaar.com</li>
+                <li className="text-noor-cream/60 tracking-wide">+1 (555) 123-4567</li>
+                <li className="text-noor-cream/60 tracking-wide">Mon - Sat: 9AM - 6PM</li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h4 className="font-semibold mb-3">Categories</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Hazrat Imam Portraits</li>
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Traditional Ismaili Wear</li>
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Community Items</li>
-              <li className="hover:text-noor-gold transition-colors cursor-pointer">Ismaili Calligraphy</li>
-            </ul>
+
+          <div className="gold-divider mt-12 mb-8" />
+
+          <div className="text-center text-xs text-noor-cream/30 tracking-widest-xl uppercase">
+            &copy; 2024 Noor Bazaar. Crafted with devotion.
           </div>
-          <div>
-            <h4 className="font-semibold mb-3">Contact</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>support@noormarket.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>Mon - Sat: 9AM - 6PM</li>
-            </ul>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
-          &copy; 2024 Noor Marketplace. All rights reserved. Made with care.
         </div>
       </footer>
     </div>

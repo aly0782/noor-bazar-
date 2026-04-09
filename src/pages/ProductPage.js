@@ -45,7 +45,7 @@ function ProductPage({ productId, addToCart, toggleWishlist, isInWishlist, navig
             className="w-full h-96 md:h-[500px] object-cover rounded-xl shadow-lg"
           />
           {discount > 0 && (
-            <span className="absolute top-4 left-4 bg-noor-highlight text-white px-3 py-1 rounded-full font-semibold">
+            <span className="absolute top-4 left-4 bg-noor-gold text-noor-dark px-3 py-1 rounded-full font-semibold">
               -{discount}% OFF
             </span>
           )}
@@ -107,7 +107,7 @@ function ProductPage({ productId, addToCart, toggleWishlist, isInWishlist, navig
               onClick={() => toggleWishlist(product)}
               className="heart-btn p-3 border border-gray-300 rounded-lg hover:bg-gray-50"
             >
-              <svg className="w-6 h-6" fill={isInWishlist(product.id) ? '#e94560' : 'none'} stroke={isInWishlist(product.id) ? '#e94560' : 'currentColor'} viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill={isInWishlist(product.id) ? '#d4af37' : 'none'} stroke={isInWishlist(product.id) ? '#d4af37' : 'currentColor'} viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </button>
@@ -199,7 +199,7 @@ function ProductPage({ productId, addToCart, toggleWishlist, isInWishlist, navig
                 <div key={review.id} className="border-b border-gray-100 pb-6">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 rounded-full bg-noor-accent text-white flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 rounded-full bg-noor-teal text-noor-cream flex items-center justify-center font-bold">
                         {review.userName.charAt(0)}
                       </div>
                       <div>

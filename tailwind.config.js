@@ -7,15 +7,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'noor-gold': '#D4A853',
-        'noor-dark': '#1a1a2e',
-        'noor-purple': '#16213e',
-        'noor-accent': '#0f3460',
-        'noor-highlight': '#e94560',
+        'noor-gold': '#d4af37',
+        'noor-gold-light': '#c9a961',
+        'noor-dark': '#1a1a1a',
+        'noor-dark-2': '#2a2a2a',
+        'noor-dark-3': '#333333',
+        'noor-teal': '#2d5a5a',
+        'noor-teal-light': '#4a7c7c',
+        'noor-cream': '#e8dcc8',
+        'noor-cream-light': '#f5f0e8',
       },
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
+        'display': ['Playfair Display', 'Georgia', 'serif'],
         'body': ['Inter', 'sans-serif'],
+      },
+      letterSpacing: {
+        'widest-xl': '0.2em',
+        'widest-2xl': '0.3em',
       }
     },
   },

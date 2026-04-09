@@ -94,7 +94,7 @@ const products = [
 const sellers = [
   {
     id: 1,
-    name: "Hazrat Imam Heritage Crafts",
+    name: "Hazrat Imam Heritage Artisans",
     description: "Devoted Ismaili artisans crafting sacred Hazrat Imam portraits and religious art for the global Ismaili community.",
     location: "Karachi, Pakistan",
     rating: 4.9,
@@ -103,7 +103,7 @@ const sellers = [
   },
   {
     id: 2,
-    name: "Ismaili Artisan Textiles",
+    name: "Ismaili Sacred Collections",
     description: "Serving the global Ismaili community with traditional garments and community items.",
     location: "Mumbai, India",
     rating: 5.0,
