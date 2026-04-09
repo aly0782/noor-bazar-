@@ -13,7 +13,6 @@ import UserDashboardPage from './pages/UserDashboardPage';
 import CheckoutPage from './pages/CheckoutPage';
 import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
-import products from './data/products';
 import './App.css';
 
 function App() {
