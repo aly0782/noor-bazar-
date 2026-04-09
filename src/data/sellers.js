@@ -14,7 +14,7 @@ const sellers = [
     responseTime: "Within 2 hours",
     shippingPolicy: "Free shipping on orders over $100",
     returnPolicy: "30-day hassle-free returns",
-    productIds: [1, 6, 7]
+    productIds: [1, 6, 7, 9]
   },
   {
     id: 2,

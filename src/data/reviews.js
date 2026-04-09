@@ -266,6 +266,44 @@ const reviews = {
       helpful: 25,
       verified: true
     }
+  ],
+  9: [
+    {
+      id: 29,
+      userName: "Ruksana G.",
+      rating: 5,
+      date: "2024-03-18",
+      text: "The beadwork on this Gujarati niyaz bottle is absolutely exquisite! The multicolor design is vibrant and the craftsmanship is flawless. A sacred treasure for our home. Ya Ali Madad!",
+      helpful: 48,
+      verified: true
+    },
+    {
+      id: 30,
+      userName: "Salim K.",
+      rating: 5,
+      date: "2024-03-12",
+      text: "Purchased this for our Jamatherana fundraiser and it was the most admired item. The hand-beaded design is truly a work of art. The brass cap adds a premium touch.",
+      helpful: 41,
+      verified: true
+    },
+    {
+      id: 31,
+      userName: "Fatima A.",
+      rating: 5,
+      date: "2024-02-28",
+      text: "Every bead is placed with such precision and devotion. The traditional Gujarati pattern is so meaningful to our Ismaili heritage. This is a limited edition piece that I will cherish forever.",
+      helpful: 35,
+      verified: true
+    },
+    {
+      id: 32,
+      userName: "Amir R.",
+      rating: 5,
+      date: "2024-02-15",
+      text: "Bought several as gifts for our community elders during Chandrat. They were all moved by the beauty and craftsmanship. The crystal base catches light beautifully.",
+      helpful: 29,
+      verified: true
+    }
   ]
 };
 

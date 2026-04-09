@@ -174,6 +174,29 @@ const products = [
       weight: "850 grams",
       origin: "Handcrafted for Ismaili celebrations"
     }
+  },
+  {
+    id: 9,
+    name: "Beaded Gujarati Niyaz Bottle - Multicolor",
+    description: "Stunning hand-beaded Gujarati niyaz bottle with intricate multicolor beadwork. Traditional Ismaili craftsmanship. Perfect for storing blessed niyaz water from Jamatherana. Ya Ali Madad.",
+    price: 78,
+    originalPrice: 135,
+    image: "/images/products/niyaz-bottle-beaded-gujarati.png",
+    category: "Sacred Keepsakes",
+    rating: 5.0,
+    reviewCount: 267,
+    stock: 14,
+    sellerId: 1,
+    tags: ["bestseller", "handcrafted", "limited"],
+    dateAdded: "2024-03-18",
+    specifications: {
+      material: "Premium Crystal Base with Hand-Beaded Design",
+      pattern: "Gujarati Traditional Multicolor",
+      beads: "White, Green, Red, Yellow, Blue",
+      cap: "Brass Cap",
+      weight: "400 grams",
+      origin: "Hand-beaded by Ismaili artisans"
+    }
   }
 ];
 

@@ -18,7 +18,8 @@ const products = [
   { id: 5, name: "Teal Heritage Dress with Gold Trim", description: "Beautiful teal traditional dress with gold trim.", price: 165, originalPrice: 280, image: "/images/products/teal-heritage-dress.jpg", category: "Mijalis Fashion", rating: 4.7, reviewCount: 198, stock: 15, sellerId: 2 },
   { id: 6, name: "Hazrat Imam Portrait Frame - Premium Black", description: "Beautifully framed portrait of Hazrat Imam.", price: 89, originalPrice: 150, image: "/images/products/hazrat-imam-frame.png", category: "Religious Art", rating: 5.0, reviewCount: 412, stock: 25, sellerId: 1 },
   { id: 7, name: "Niyaz Rose Water Bottle - Crystal Clear", description: "Elegant crystal bottle for blessed niyaz water.", price: 52, originalPrice: 89, image: "/images/products/niyaz-bottle.png", category: "Sacred Keepsakes", rating: 4.9, reviewCount: 298, stock: 30, sellerId: 1 },
-  { id: 8, name: "Blue Bandani Saree - Gold & Silver Sequins", description: "Exquisite blue bandani saree with sequin embroidery.", price: 275, originalPrice: 480, image: "/images/products/blue-bandani-sequins.jpg", category: "Mijalis Fashion", rating: 4.9, reviewCount: 345, stock: 6, sellerId: 2 }
+  { id: 8, name: "Blue Bandani Saree - Gold & Silver Sequins", description: "Exquisite blue bandani saree with sequin embroidery.", price: 275, originalPrice: 480, image: "/images/products/blue-bandani-sequins.jpg", category: "Mijalis Fashion", rating: 4.9, reviewCount: 345, stock: 6, sellerId: 2 },
+  { id: 9, name: "Beaded Gujarati Niyaz Bottle - Multicolor", description: "Hand-beaded Gujarati niyaz bottle with multicolor beadwork.", price: 78, originalPrice: 135, image: "/images/products/niyaz-bottle-beaded-gujarati.png", category: "Sacred Keepsakes", rating: 5.0, reviewCount: 267, stock: 14, sellerId: 1 }
 ];
 
 const sellers = [

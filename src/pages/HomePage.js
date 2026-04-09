@@ -211,6 +211,35 @@ function HomePage({ navigateToProduct, navigateToSeller, addToCart, toggleWishli
         )}
       </section>
 
+      {/* Sacred Keepsakes Section */}
+      <section className="max-w-7xl mx-auto px-4 py-16">
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <p className="text-noor-gold text-xs tracking-widest-2xl uppercase mb-2">Sacred Keepsakes</p>
+            <h2 className="text-2xl font-display font-bold text-noor-cream">Niyaz Bottles & Blessed Items</h2>
+          </div>
+          <button
+            onClick={() => setCategoryFilter('Sacred Keepsakes')}
+            className="text-sm text-noor-gold font-medium tracking-wide hover:underline"
+          >
+            See All &rarr;
+          </button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {products.filter(p => p.category === 'Sacred Keepsakes').map(product => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              onNavigate={navigateToProduct}
+              onAddToCart={addToCart}
+              onToggleWishlist={toggleWishlist}
+              isInWishlist={isInWishlist(product.id)}
+              viewMode="grid"
+            />
+          ))}
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="bg-noor-dark-2 py-16 border-t border-b border-noor-dark-3">
         <div className="max-w-7xl mx-auto px-4">
