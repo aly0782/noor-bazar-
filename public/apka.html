@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APKA - Artisan Textiles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FAF7F2;
+            --blush: #E8D5D0;
+            --sage: #C9D9D1;
+            --terracotta: #D4845C;
+            --indigo: #3D4E6B;
+            --gold: #B8860B;
+            --dark: #1A1A1A;
+            --light: #F5F3F0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background: var(--cream);
+            color: var(--dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(250, 247, 242, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 1.2rem 0;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.3rem;
+            color: var(--dark);
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-size: 0.85rem;
+            font-weight: 500;
+            font-family: 'Space Mono', monospace;
+            letter-spacing: 0.15rem;
+            text-transform: uppercase;
+            transition: opacity 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--terracotta);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            margin-top: 80px;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            padding: 4rem 3rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 132, 92, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .hero-text .subtitle {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            max-width: 95%;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .cta-button {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            padding: 1rem 2.2rem;
+            background: var(--indigo);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--terracotta);
+            transition: left 0.4s ease;
+            z-index: -1;
+        }
+
+        .cta-button:hover::before {
+            left: 0;
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--dark);
+            border: 2px solid var(--dark);
+        }
+
+        .cta-button.secondary::before {
+            background: var(--dark);
+        }
+
+        .cta-button.secondary:hover {
+            color: white;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 500px;
+        }
+
+        .hero-image-box {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .collection-intro {
+            max-width: 1400px;
+            margin: 8rem auto 4rem;
+            padding: 0 3rem;
+            text-align: center;
+        }
+
+        .collection-intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .collection-intro .label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 1rem;
+        }
+
+        .collection-intro p {
+            font-size: 1.1rem;
+            color: #5a5a5a;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 4rem auto;
+            padding: 0 3rem;
+        }
+
+        .showcase-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+        }
+
+        .showcase-image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .showcase-item:hover .showcase-image {
+            transform: scale(1.05);
+        }
+
+        .showcase-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background: linear-gradient(to top, rgba(26, 26, 26, 0.7) 0%, transparent 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 10;
+        }
+
+        .showcase-item:hover .showcase-overlay {
+            opacity: 1;
+        }
+
+        .showcase-title {
+            font-family: 'Playfair Display', serif;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .showcase-category {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.15rem;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .about {
+            background: var(--light);
+            margin-top: 6rem;
+            padding: 5rem 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            color: #5a5a5a;
+            margin-bottom: 1.5rem;
+            line-height: 1.9;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-left: 4px solid var(--terracotta);
+            border-radius: 0;
+        }
+
+        .feature-card h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.15rem;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            color: var(--terracotta);
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .about-image {
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 1;
+            border-radius: 0;
+        }
+
+        footer {
+            background: var(--indigo);
+            color: #e0e0e0;
+            padding: 4rem 3rem 2rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .footer-brand p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #b8b8b8;
+        }
+
+        .footer-section h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.15rem;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+            color: white;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.7rem;
+        }
+
+        .footer-section a {
+            color: #b8b8b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-socials a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-socials a:hover {
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                margin-top: 100px;
+                padding: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .showcase-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">APKA</div>
+            <ul class="nav-links">
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Journal</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <div class="subtitle">Artisan Block Print</div>
+            <h1>Woven Stories</h1>
+            <p>Each textile is a conversation between tradition and imagination. APKA celebrates the hands that craft, the colors that bloom, and the stories embedded in every thread. Handcrafted dohas, quilts, and sarongs that exist beyond seasons.</p>
+            <div class="cta-group">
+                <button class="cta-button">Explore</button>
+                <button class="cta-button secondary">Our Story</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-box" style="background-image: url('https://images.unsplash.com/photo-1598848212624-11a36a5ff98c?w=800&h=800&fit=crop');"></div>
+        </div>
+    </section>
+
+    <section id="collection">
+        <div class="collection-intro">
+            <div class="label">Collection</div>
+            <h2>Dohas, Quilts & Sarongs</h2>
+            <p>A curated selection of handcrafted textiles that bridge heritage craft with contemporary living. Each piece carries the imprint of artisan hands and natural materials.</p>
+        </div>
+
+        <div class="showcase-grid">
+            <div class="showcase-item">
+                <div class="showcase-image" style="background-image: url('https://images.unsplash.com/photo-1617113034602-61d3e4e18f12?w=600&h=800&fit=crop');"></div>
+                <div class="showcase-overlay">
+                    <div class="showcase-category">Dohar</div>
+                    <div class="showcase-title">Indigo Bloom</div>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <div class="showcase-image" style="background-image: url('https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=600&h=800&fit=crop');"></div>
+                <div class="showcase-overlay">
+                    <div class="showcase-category">Quilt</div>
+                    <div class="showcase-title">Coral Garden</div>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <div class="showcase-image" style="background-image: url('https://images.unsplash.com/photo-1566150905458-1bf049841f10?w=600&h=800&fit=crop');"></div>
+                <div class="showcase-overlay">
+                    <div class="showcase-category">Sarong</div>
+                    <div class="showcase-title">Sage Whisper</div>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <div class="showcase-image" style="background-image: url('https://images.unsplash.com/photo-1598848212624-11a36a5ff98c?w=600&h=800&fit=crop');"></div>
+                <div class="showcase-overlay">
+                    <div class="showcase-category">Dohar</div>
+                    <div class="showcase-title">Marigold Dreams</div>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <div class="showcase-image" style="background-image: url('https://images.unsplash.com/photo-1577005228220-a9b6b84afeb6?w=600&h=800&fit=crop');"></div>
+                <div class="showcase-overlay">
+                    <div class="showcase-category">Quilt</div>
+                    <div class="showcase-title">Heritage Set</div>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <div class="showcase-image" style="background-image: url('https://images.unsplash.com/photo-1549887534-d2d8f9c5c7ce?w=600&h=800&fit=crop');"></div>
+                <div class="showcase-overlay">
+                    <div class="showcase-category">Sarong</div>
+                    <div class="showcase-title">Ocean Breeze</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h3>Craft Meets Soul</h3>
+            <p>APKA exists in the space where traditional Indian block printing techniques meet contemporary aesthetics. We work directly with artisan communities, honoring their craft while creating pieces that belong in modern homes.</p>
+            <p>Every dohar is reversible, every quilt hand-stitched, every sarong breathable and durable. Materials are natural. Production is ethical. Impact is measurable.</p>
+
+            <div class="about-features">
+                <div class="feature-card">
+                    <h4>Hand Block Printed</h4>
+                    <p>Traditional techniques that have been perfected over generations, creating unique variations in every piece.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Natural Fibers</h4>
+                    <p>100% cotton, sustainably sourced. Soft, breathable, and built to last through years of use and washing.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Ethical Production</h4>
+                    <p>Fair wages, safe working conditions, and direct partnerships with artisan communities across India.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Timeless Design</h4>
+                    <p>Color palettes and motifs inspired by Indian heritage but designed for any interior, any season.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image" style="background-image: url('https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=800&h=800&fit=crop');"></div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>APKA</h3>
+                    <p>Handcrafted textiles that celebrate Indian artistry and support sustainable craft traditions. Every piece is a story, every color a choice, every thread a connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Collection</h4>
+                    <ul>
+                        <li><a href="#">Dohas</a></li>
+                        <li><a href="#">Quilts</a></li>
+                        <li><a href="#">Sarongs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Artisans</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 APKA. Handcrafted with intention.</p>
+                <div class="footer-socials">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sustainability</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
